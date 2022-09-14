@@ -78,6 +78,7 @@ const gameOver = () => {
   // make it inactive
   display.classList.add("inactive");
   // show result
+        // Error fixed - time taken has added with toFixed 
   resultModal.innerHTML += `
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken.toFixed(0)}</span> seconds</p>
