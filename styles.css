@@ -153,6 +153,7 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+  /* Error fixed - text direction dixed for hitory inside section */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -191,6 +192,7 @@ button {
   .card {
     flex-direction: column;
   }
+  /* Error fixed - media query added for card inside history section */
   #histories {
     display: flex;
     flex-wrap: wrap;
