@@ -199,3 +199,14 @@ button {
     justify-content: space-around;
   }
 }
+
+/* Blog page CSS */
+.answer-container{
+  display: grid;
+  grid-template-columns: repeat(1);
+  gap: 10px;
+}
+.answer{
+  color: white;
+
+}
