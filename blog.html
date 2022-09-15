@@ -19,7 +19,8 @@
     <nav class="navbar bg-dark">
       <form class="container-fluid justify-content-start d-flex justify-content-around">
         <h1 class="mb-5"><img src="./logo.png" /></h1>
-        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href ='index.html'">Typing Word Monster</button>
+        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href ='index.html'">Typing
+          Word Monster</button>
       </form>
     </nav>
   </header>
@@ -117,14 +118,59 @@
               <br>
               <br>
               <h3 class="text-info mb-3">How the Event Loop Works --</h3>
-              <p><strong>*</strong> Call stack holds all the synchronous function calls. Call stack will execute code in a last in first out approach. So last the most inner nested code will be executed first and then one level above that and so on. If the function call is asynchronous it will add a new call entry on WebAPIs and the API will add a new call to the callback queue after the asynchronous action is done.</p>
-              <p><strong>*</strong> Now we have two stacks with functions to be executed. This is where the Event Loop comes in. Event Loop's job is to
-              watch Callback Queue and Call Stack, whenever Call Stack is empty and we have called in Callback Queue. The event loop
-              will move calls to Call Stack and execute them in succession..</p>
-              <p><strong>*</strong> So to explain it in different terms, the event loop will wait until all blocking/synchronous code is done and then add
-              asynchronous calls into the call stack. This simple architectural approach is what allows javascript to handle way more
-              requests than the traditional multi-threaded synchronous approach.</p>
-              <h5 class="text-warning"><strong>#</strong> For more information visit the link here - <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&vl=en" target="_blank" rel="noopener noreferrer">Link.</a></h5>
+              <p><strong>*</strong> Call stack holds all the synchronous function calls. Call stack will execute code in
+                a last in first out approach. So last the most inner nested code will be executed first and then one
+                level above that and so on. If the function call is asynchronous it will add a new call entry on WebAPIs
+                and the API will add a new call to the callback queue after the asynchronous action is done.</p>
+              <p><strong>*</strong> Now we have two stacks with functions to be executed. This is where the Event Loop
+                comes in. Event Loop's job is to
+                watch Callback Queue and Call Stack, whenever Call Stack is empty and we have called in Callback Queue.
+                The event loop
+                will move calls to Call Stack and execute them in succession..</p>
+              <p><strong>*</strong> So to explain it in different terms, the event loop will wait until all
+                blocking/synchronous code is done and then add
+                asynchronous calls into the call stack. This simple architectural approach is what allows javascript to
+                handle way more
+                requests than the traditional multi-threaded synchronous approach.</p>
+              <h5 class="text-warning"><strong>#</strong> For more information visit the link here - <a
+                  href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&vl=en" target="_blank"
+                  rel="noopener noreferrer">Link.</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 8 ways of getting Undefine -->
+    <div class="my-5">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <strong class="text-success fs-1">How do I get undefined in JavaScript?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h3 class="text-info mb-3"><strong>8 ways we can get an <code>undefined</code> in JavaScript. Those are
+                  --</strong></h3>
+              <p><strong>1. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              <br>
+              <p><strong>2. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              <br>
+              <p><strong>3. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              <br>
+              <p><strong>4. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              <br>
+              <p><strong>5. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              <br>
+              <p><strong>6. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              <br>
+              <p><strong>7. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              <br>
+              <p><strong>8. If we declare a <code>let</code> variable with no value(not initialized) and we try to see the result or output or <code>consol.log</code> the variable then, it will give us an <code>undefined</code>.</strong></p>
+              
             </div>
           </div>
         </div>
