@@ -70,6 +70,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
+  const timeTakenUpdated = timeTaken.toFixed(0);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -83,9 +84,9 @@ const gameOver = () => {
         // Error fixed - time taken has added with toFixed 
   resultModal.innerHTML += `
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken.toFixed(0)}</span> seconds</p>
+    <p>You took: <span class="bold">${timeTakenUpdated}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <button onclick="closeModal()" style="margin-top : 10px;">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
