@@ -18,13 +18,42 @@
   <header>
     <nav class="navbar bg-dark">
       <form class="container-fluid justify-content-start d-flex justify-content-around">
-        <h1 class=""><img src="./logo.png" /></h1>
-        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href ='index.html'">Go to Home</button>
+        <h1 class="mb-5"><img src="./logo.png" /></h1>
+        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href ='index.html'">Go to
+          Home</button>
       </form>
     </nav>
   </header>
-  <main>
-
+  <main class="mt-2">
+    <h1 class="fs-1 mt-2 text-light"> Difference between <strong>Local Storage</strong> and <strong>Session Storage</strong> -</h1>
+    <table>
+      <table class="table pt-5 text-light">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Local Storage</th>
+            <th scope="col">Session Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>The storage capacity of local storage is 5MB/10MB.</td>
+            <td>The storage capacity of session storage is 5MB.</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>As it is not session-based, it must be deleted via javascript or manually.</td>
+            <td>It's session-based and works per window or tab. This means that data is stored only for the duration of a session, until the browser (or tab) is closed.</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>You have to write - <code>localStorage</code> before calling 4 methods of storage</td>
+            <td>You have to write - <code>sessionStorage</code> before calling 4 methods of storage</td>
+          </tr>
+        </tbody>
+      </table>
+    </table>
   </main>
   <footer>
 
