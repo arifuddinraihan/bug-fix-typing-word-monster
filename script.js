@@ -45,7 +45,7 @@ const typeController = (e) => {
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
-      // Error fixed -  Error count is increased for showing inside the red area
+      // Error fixed -  Error count for red letters inside the typing box is increased for showing inside the red area with mistake numbers
     errorCount++;
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
   }
@@ -70,6 +70,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
+    // Error fixed - time taken has added with toFixed for removing delimiters
   const timeTakenUpdated = timeTaken.toFixed(0);
 
   // show result modal
@@ -111,7 +112,7 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
-      // Error fixed - innterHTML was set to $count
+      // Error fixed - innterHTML was set to $count instead of variable let count = 3
     countdownOverlay.innerHTML = count;
     // console.log(countdownOverlay);
 
@@ -119,7 +120,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      // Error fixed - countdownOverlay has flex instead of none style
+      // Error fixed - countdownOverlay has display - flex instead of display - none style
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
 
